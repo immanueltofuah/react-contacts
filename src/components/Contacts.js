@@ -21,4 +21,4 @@ function ContactList(props) {
       </div>
   );
 }
-export default Contantlist;
+export default Contacts;

@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-
+import ContactsForm from './components/ContactsForm';
+import Contacts from './components/Contacts';
 function App() {
   return (
     <div className="App">
