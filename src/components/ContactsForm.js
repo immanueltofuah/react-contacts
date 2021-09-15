@@ -13,6 +13,7 @@ function ContactsForm(props) {
         phonenumber: phonenumber,
         location: location,
     };
+
     props.addUser(user);
 
     setName("");
@@ -21,29 +22,30 @@ function ContactsForm(props) {
 
  } 
  return (
-     <form onSubmit={(e) => handleSubmit(e)}>
-         <input
+     <form  onSubmit={(e) => handleSubmit(e)}>
+         <h1>Codetrain student form</h1>
+         <input placeholder="Fullname"
           type="text"
           name="fullname"
           value={name}
           onChange={(e) => setName(e.target.value)}
           />
 
-          <input 
+          <input placeholder="Phonenumber"
           type="number"
           name="phonenumber"
-          value={number}
+          value={phonenumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
           />
 
-          <input
+          <input placeholder="Location"
           type="location"
           name="location"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
           />
         
-        <input type="submit" />
+        <input className="but" type="submit" />
         </form>
           
           );

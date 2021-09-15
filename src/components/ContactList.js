@@ -9,7 +9,7 @@ function ContactList(props) {
         {
             users.map((user, index) => {
                 return (
-                  <div key={index}>
+                  <div className="display" key ={index}>
                     <h1>{user.name}</h1>
                     <h2>{user.phonenumber}</h2>
                     <h3>{user.location}</h3> 
@@ -21,4 +21,4 @@ function ContactList(props) {
       </div>
   );
 }
-export default Contacts;
+export default ContactList;
