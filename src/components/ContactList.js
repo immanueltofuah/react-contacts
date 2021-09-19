@@ -1,24 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import User from "./User";
+import { Modal, Button } from "react-bootstrap";
 
 function ContactList(props) {
-
-    const users = props.data;
-
   return (
-      <div>
-        {
-            users.map((user, index) => {
-                return (
-                  <div className="display" key ={index}>
-                    <h1>{user.name}</h1>
-                    <h2>{user.phonenumber}</h2>
-                    <h3>{user.location}</h3> 
-                  </div> 
-                );
-            })
-        }
-
-      </div>
+    <div>
+      {props.users.map((user) => {
+        //renders the User component for each user in the users array
+        return (
+          <User
+            user={user}
+            key={user.id}
+            deleteUser={props.deleteUser}
+            editUser={props.editUser}
+          />
+        );
+      })}
+    </div>
   );
 }
-export default ContactList;
+
+export default UserList;
