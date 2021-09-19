@@ -4,6 +4,9 @@ import { Form, Button } from "react-bootstrap";
 export default function EditUserForm(props) {
   const [name, setName] = useState(props.user.name);
   const [email, setEmail] = useState(props.user.email);
+  const [location, setLocation] = useState(props.user.location);
+
+  
 
   const handleNameChange = (e) => {
     setName(e.target.value);
