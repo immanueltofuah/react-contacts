@@ -20,4 +20,4 @@ function ContactList(props) {
   );
 }
 
-export default UserList;
+export default ContactList;
