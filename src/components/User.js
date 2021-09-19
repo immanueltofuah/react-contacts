@@ -18,7 +18,7 @@ function User(props) {
   return (
     <div>
       <h1>{user.name}</h1>
-      <h3>{user.email}</h3>
+      <h2>{user.email}</h2>
       <h3> {user.location}</h3>
       <Button variant="primary" onClick={() => toggleModal()}>
         Edit
