@@ -25,6 +25,7 @@ export default function EditUserForm(props) {
     let editedUser = {
       name: name,
       email: email,
+      location: location,
       id: props.user.id,
     };
 
@@ -53,8 +54,20 @@ export default function EditUserForm(props) {
           value={email}
           onChange={(e) => handleEmailChange(e)}
         />
+         </Form.Group>
+        
+         <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Location</Form.Label>
+        <Form.Control
+          type="text"
+          placeholder="Enter location"
+          value={location}
+          onChange={(e) => handleEmailChange(e)}
+        />
         <Button onClick={() => handleSubmit()}>Save</Button>
-      </Form.Group>
+         </Form.Group>
+        
+     
     </Form>
   );
 }
