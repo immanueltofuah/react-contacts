@@ -41,8 +41,8 @@ function App() {
 
   return (
     <div>
-      <UserForm addUser={addUser} />
-      <UserList users={users} deleteUser={deleteUser} editUser={editUser} />
+      <ContactsForm addUser={addUser} />
+      <ContactList users={users} deleteUser={deleteUser} editUser={editUser} />
     </div>
   );
 }
