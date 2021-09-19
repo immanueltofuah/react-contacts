@@ -16,6 +16,10 @@ export default function EditUserForm(props) {
     setEmail(e.target.value);
   };
 
+  const handleLocationChange = (e) => {
+    setLocation(e.target.value);
+  };
+
   function handleSubmit() {
     //combines the new user details
     let editedUser = {
