@@ -5,7 +5,7 @@ import { v4 as uuid } from "uuid";
 function UserForm(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [location, setEmail] = useState("");
+  const [location, setLocation] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
