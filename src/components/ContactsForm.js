@@ -1,56 +1,52 @@
 import React, { useState } from "react";
+//package to generate unique id
+import { v4 as uuid } from "uuid";
 
-function ContactsForm(props) {
-    const [name, setName] = useState("");
-    const [phonenumber, setPhoneNumber] = useState("");
-    const [location, setLocation] = useState("");
+function UserForm(props) {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [location, setEmail] = useState("");
 
- function handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
 
-    let user = {
+    if (email && name) {
+      let newUser = {
         name: name,
-        phonenumber: phonenumber,
+        email: email,
         location: location,
-    };
+        //adds a unique id to the new user
+        id: uuid(),
+      };
 
-    props.addUser(user);
+      props.addUser(newUser);
 
-    setName("");
-    setPhoneNumber("");
-    setLocation("");
-
- } 
- return (
-     <form  onSubmit={(e) => handleSubmit(e)}>
-         <h1>Codetrain student form</h1>
-         <input placeholder="Fullname"
-          type="text"
-          name="fullname"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          />
-
-          <input placeholder="Phonenumber"
-          type="number"
-          name="phonenumber"
-          value={phonenumber}
-          onChange={(e) => setPhoneNumber(e.target.value)}
-          />
-
-          <input placeholder="Location"
-          type="location"
-          name="location"
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
-          />
-        
-        <input className="but" type="submit" />
-        </form>
-          
-          );
+      setName("");
+      setEmail("");
+      setLocation("");
     }
+  }
 
-export default ContactsForm; 
-  
+  return (
+    <form onSubmit={(e) => handleSubmit(e)}>
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <input
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <input 
+        type="text"
+        value={location}
+        onChange={(e) => setLocation(e.target.value)}
+      />
+      <input type="submit" />
+    </form>
+  );
+}
 
+export default ContactForm;
