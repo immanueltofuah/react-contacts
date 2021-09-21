@@ -2,7 +2,7 @@ import React, { useState } from "react";
 //package to generate unique id
 import { v4 as uuid } from "uuid";
 
-function UserForm(props) {
+function ContactsForm(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [location, setLocation] = useState("");
