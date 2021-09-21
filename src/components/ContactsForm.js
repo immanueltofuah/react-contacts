@@ -49,4 +49,4 @@ function UserForm(props) {
   );
 }
 
-export default ContactForm;
+export default ContactsForm;
