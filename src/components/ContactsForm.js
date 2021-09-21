@@ -47,7 +47,7 @@ function ContactsForm(props) {
         value={location}
         onChange={(e) => setLocation(e.target.value)}
       />
-      <input className="buts" type="submit" />
+      <input className="but" type="submit" />
     </form>
   );
 }

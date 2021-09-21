@@ -28,3 +28,12 @@ input {
 .display {
   background-color: aqua;
 }
+
+.but 
+{background-color: rgb(143, 172, 36);
+width: 60px;
+border : black;
+padding: 10px;
+border-radius: 15px;
+text-align: center;
+}
