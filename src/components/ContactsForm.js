@@ -30,16 +30,19 @@ function ContactsForm(props) {
   return (
     <form onSubmit={(e) => handleSubmit(e)}>
       <input
+      placeholder="Full Name"
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <input
+        placeholder="Email"
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
       <input 
+        placeholder="Location"
         type="text"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
