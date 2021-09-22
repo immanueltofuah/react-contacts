@@ -62,7 +62,7 @@ export default function EditUserForm(props) {
           type="text"
           placeholder="Enter location"
           value={location}
-          onChange={(e) => handleEmailChange(e)}
+          onChange={(e) => handleLocationChange(e)}
         />
         <Button onClick={() => handleSubmit()}>Save</Button>
          </Form.Group>
