@@ -11,10 +11,10 @@ const initialState= {
     
     }
     
-    const usersReducer =(state = initialState, action)=>{
+    const contactReducer =(state = initialState, action)=>{
     return state
     
     
     };
     
-    export default usersReducer;
+    export default contactReducer;
