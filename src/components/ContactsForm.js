@@ -58,4 +58,4 @@ function ContactsForm(props) {
 const mapDispatchToProps = {
   addNewUser: addUser,
 };
-export default ContactsForm;
+export default connect (null, mapDispatchToProps) (ContactsForm);
