@@ -21,7 +21,7 @@ function ContactsForm(props) {
         id: uuid(),
       };
 
-      props.addUser(newUser);
+      props.addNewUser(newUser);
 
       setName("");
       setEmail("");
