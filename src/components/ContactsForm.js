@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 //package to generate unique id
 import { v4 as uuid } from "uuid";
+import { connect } from "react-redux";
+import { addUser } from "./actions/userActions";
 
 function ContactsForm(props) {
   const [name, setName] = useState("");
