@@ -6,3 +6,20 @@ return {
     payload: newUser,
 };
 };
+
+export const deleteContact = (contactId) => {
+    return {
+            type: "DELETE_CONTACT",
+            payload: contactId,
+
+    };
+};
+
+export const editUser = ( contactId,
+updatedContact ) => {
+        return{
+            type: "EDIT_CONTACT",
+            payload: { contactId, updatedContact},
+
+        };
+};
