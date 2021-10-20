@@ -11,8 +11,7 @@ function ContactList(props) {
           <User
             user={user}
             key={user.id}
-            deleteUser={props.deleteUser}
-            editUser={props.editUser}
+            
           />
         );
       })}
