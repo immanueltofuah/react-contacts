@@ -33,7 +33,7 @@ import { editUser } from "./actions/userActions"
     };
 
     //calls the edit User function and closes the modal
-    props.editUser(editedUser, props.user.id);
+    props.editUser(props.user.id, editedUser);
     props.toggleModal();
   }
 
