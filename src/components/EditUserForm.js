@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { connect } from "react-redux";
-import { editContact } from "./actions/userActions"
+import { editUser } from "./actions/userActions"
 
 
  function EditUserForm(props) {
@@ -75,7 +75,7 @@ import { editContact } from "./actions/userActions"
   );
 }
 const mapDispatchToProps = {
-  editContact,
+  editUser,
 };
 
 export default connect (null, mapDispatchToProps)(EditUserForm);

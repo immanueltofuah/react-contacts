@@ -7,19 +7,19 @@ return {
 };
 };
 
-export const deleteContact = (contactId) => {
+export const deleteUser = (userId) => {
     return {
-            type: "DELETE_CONTACT",
-            payload: contactId,
+            type: "DELETE_USER",
+            payload: userId,
 
     };
 };
 
-export const editContact = ( contactId,
-updatedContact ) => {
+export const editUser = ( userId,
+updatedUser ) => {
         return{
-            type: "EDIT_CONTACT",
-            payload: { contactId, updatedContact},
+            type: "EDIT_USER",
+            payload: { userId, updatedUser},
 
         };
 };
