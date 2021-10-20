@@ -39,7 +39,7 @@ function App() {
   return (
     <div>
       <ContactsForm />
-      <ContactList  deleteUser={deleteUser} editUser={editUser} />
+      <ContactList  />
     </div>
   );
 }
