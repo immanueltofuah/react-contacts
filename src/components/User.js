@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import EditUserForm from "./EditUserForm";
+import { connect } from "react-redux";
+import { deleteUser } from "./actions/userActions";
 
 function User(props) {
   const user = props.user;
