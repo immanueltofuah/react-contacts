@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import { connect } from "react-redux";
+import { editContact } from "./actions/userActions"
+
 
 export default function EditUserForm(props) {
   const [name, setName] = useState(props.user.name);

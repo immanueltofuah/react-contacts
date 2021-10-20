@@ -15,7 +15,7 @@ export const deleteContact = (contactId) => {
     };
 };
 
-export const editUser = ( contactId,
+export const editContact = ( contactId,
 updatedContact ) => {
         return{
             type: "EDIT_CONTACT",
