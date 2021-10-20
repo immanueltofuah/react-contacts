@@ -5,9 +5,7 @@ import ContactList from "./components/ContactList";
 function App() {
   const [users, setUsers] = useState([]);
 
-  // function addUser(user) {
-  //   setUsers([...users, user]);
-  // }
+  
 
    //function to edit user
    function editUser(newDetails, userId) {
