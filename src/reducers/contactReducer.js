@@ -16,7 +16,7 @@ const contactReducer = (state = initialState, action) => {
         case "EDIT_USER":
           const updatedUsers = state.users.map((user) => {
             if (user.id === action.payload.userId) {
-              return action.payload.updatedUsers;
+              return action.payload.updatedUser;
             }
             return user;
           });
