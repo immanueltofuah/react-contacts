@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import ContactsForm from "./components/ContactsForm";
 import { useState } from "react";
@@ -6,9 +5,9 @@ import ContactList from "./components/ContactList";
 function App() {
   const [users, setUsers] = useState([]);
 
-  function addUser(user) {
-    setUsers([...users, user]);
-  }
+  // function addUser(user) {
+  //   setUsers([...users, user]);
+  // }
 
    //function to edit user
    function editUser(newDetails, userId) {
@@ -41,8 +40,8 @@ function App() {
 
   return (
     <div>
-      <ContactsForm addUser={addUser} />
-      <ContactList users={users} deleteUser={deleteUser} editUser={editUser} />
+      <ContactsForm />
+      <ContactList  deleteUser={deleteUser} editUser={editUser} />
     </div>
   );
 }

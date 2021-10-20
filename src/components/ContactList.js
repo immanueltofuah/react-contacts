@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import User from "./User";
-import { Modal, Button } from "react-bootstrap";
+
 import { connect } from "react-redux";
 
 function ContactList(props) {
@@ -22,9 +21,9 @@ function ContactList(props) {
 }
 
 const mapStateToProps = (state) => {
-  return{
+  return {
     users: state.users,
-  }
-}
+  };
+};
 
-export default connect (mapStateToProps) (ContactList);
+export default connect(mapStateToProps)(ContactList);
