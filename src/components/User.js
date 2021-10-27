@@ -54,6 +54,6 @@ function User(props) {
 
 const mapDispatchToProps = {
   deleteUser,
-},
+}
 
 export default connect(null, mapDispatchToProps) (User);
