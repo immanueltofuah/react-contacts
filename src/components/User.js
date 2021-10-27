@@ -52,4 +52,8 @@ function User(props) {
   );
 }
 
-export default User;
+const mapDispatchToProps = {
+  deleteUser,
+},
+
+export default connect(null, mapDispatchToProps) (User);
