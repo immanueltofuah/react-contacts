@@ -6,7 +6,11 @@ import thunk from "redux-thunk";
 import contactReducer from "../reducers/contactReducer";
 
 
-const store = createStore(contactReducer);
-
+const store = createStore(contactReducer, compose(
+    applyMiddleware(thunk.withExtraArgument({getFirebase, getFirestore })),
+    reduxReactFirebase(firebase),
+    reduxFirestore(firebase)
+    )
+    );
 
 export default store;
