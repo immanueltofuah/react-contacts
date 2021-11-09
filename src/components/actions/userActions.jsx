@@ -1,5 +1,10 @@
 //action to add new user
 export const addUser = (newUser) => {
+    return ( dispatch, state, { getFirestore })=>{
+        getFirestore().collection("users").add(user).then(()=>{
+            
+        })
+    }
 //returns the type of action and data to send to the store
 return {
     type: "ADD_USER",
