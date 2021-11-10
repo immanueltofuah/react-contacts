@@ -1,7 +1,7 @@
 //action to add new user
 export const addUser = (newUser) => {
     return ( dispatch, state, { getFirestore })=>{
-        getFirestore().collection("users").add(user).then(()=>{
+        getFirestore().collection("users").add(newUser).then(()=>{
             
         })
     }
