@@ -1,8 +1,10 @@
 import "./App.css";
 import ContactsForm from "./components/ContactsForm";
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import ContactList from "./components/ContactList";
-function App() {
+import {connect} from "react-redux";
+import {getAllUsers} from "./components/actions/userActions";
+function App(props) {
   const [users, setUsers] = useState([]);
 
   
@@ -34,7 +36,9 @@ function App() {
     setUsers(filteredUsers);
   }
 
-  
+  useEffect(()=>{
+    props.getAllUsers();
+  },[]);
 
   return (
     <div>
@@ -43,5 +47,8 @@ function App() {
     </div>
   );
 }
+const mapDispatchToProps = {
+  getAllUsers,
+}
 
-export default App;
+export default connect(null, mapDispatchToProps)(App);
