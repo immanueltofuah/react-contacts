@@ -3,7 +3,7 @@ export const addUser = (newUser) => {
     return (dispatch, state, { getFirestore }) => {
 		getFirestore()
 			.collection("contacts")
-			.add({...user, timestamp: getFirestore()
+			.add({...contact, timestamp: getFirestore()
             .FieldValue.serverTimestamp() })
 			.then(() => {});
 	};
