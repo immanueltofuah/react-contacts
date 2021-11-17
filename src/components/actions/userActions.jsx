@@ -1,5 +1,5 @@
 //action to add new user
-export const addUser = (newUser) => {
+export const addUser = (contact) => {
     return (dispatch, state, { getFirestore }) => {
 		getFirestore()
 			.collection("contacts")
