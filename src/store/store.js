@@ -6,7 +6,7 @@ import thunk from "redux-thunk";
 import contactReducer from "../reducers/contactReducer";
 
 const reducers = combineReducers ({
-    users: usersReducer,
+    users: contactReducer,
     firebase: firebaseReducer
 })
 
