@@ -14,9 +14,9 @@ function Home(props) {
   return (
     <div>
         <button onClick={() => props.signOut()}>Sign out</button>
-      <UserForm 
+      <ContactsForm 
       />
-      <UserList/>
+      <ContactsList/>
     </div>
   );
 }
