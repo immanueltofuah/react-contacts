@@ -23,7 +23,7 @@ const contactReducer = (state = initialState, action) => {
           return { ...state, users: updatedUsers };
          
           case "SET_ALL_USERS":
-            return{ ...state, users: action.payload};
+            return{ users: action.payload};
     
       default:
       return state;
