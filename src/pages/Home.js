@@ -9,19 +9,20 @@ import { getAllUsers } from "../components/actions/userActions";
 function Home(props) {
     useEffect(() => {
 		props.getAllUsers();
-	}, []);
+	}, [props]);
  
   return (
     <div>
         <button onClick={() => props.signOut()}>Sign out</button>
-      <ContactsForm 
+      <ContactForm 
       />
-      <ContactsList/>
+      <ContactList/>
     </div>
   );
 }
 const mapDispatchToProps = {
-  getAllUsers: getAllUsers, signOut
+  getAllUsers,
+   signOut
 };
   
   export default connect(null, mapDispatchToProps)(Home);

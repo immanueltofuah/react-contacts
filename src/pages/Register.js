@@ -1,10 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import {
-  createUserWithEmailAndPassword,
-  signInWithGoogle,
-} from "../components/actions/authActions";
+import { createUserWithEmailAndPassword, signInWithGoogle
+} from "../components/actions/authAction";
 
 function Register(props) {
   if (!props.auth.isLoaded) return null;

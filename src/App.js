@@ -6,7 +6,7 @@ import {connect} from "react-redux";
 import {getAllUsers} from "./components/actions/userActions";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./components/actions/ProtectedRoute";
 import { BrowserRouter, Route } from "react-router-dom";
 import Register from "./pages/Register";
 

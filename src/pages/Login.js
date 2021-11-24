@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { login, signInWithGoogle } from "../components/actions/authActions";
+import { login, signInWithGoogle} from "../components/actions/authAction.js";
 
 function Login(props) {
   if (!props.auth.isLoaded) return null;

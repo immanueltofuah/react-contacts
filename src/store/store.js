@@ -10,7 +10,7 @@ const reducers = combineReducers ({
     firebase: firebaseReducer
 })
 
-const store = createStore(contactReducer, compose(
+const store = createStore(reducers, compose(
     applyMiddleware(thunk.withExtraArgument({getFirebase, getFirestore })),
     reduxReactFirebase(firebase),
     reduxFirestore(firebase)
